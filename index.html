@@ -1,34 +1,40 @@
 <html>
 <head>
 <style type="text/css">
-.merp {
+.ccc {
 	background: #ccc;
-}
-.code_thing {
-	position: relative;
-	margin: 10px 0;
 }
 </style>
 <script type="text/javascript" src="jquery-1.7.min.js"></script>
 <script type="text/javascript" src="hoverslide.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	$(".merp").hoverSlide();
+	$("#e1").hoverSlide();
+	$("#e2").hoverSlide(200);
 });
 </script>
 </head>
 <body>
-some other stuff<br/>
-<div style="width: 300px;position: relative;">
+<div style="width: 500px;">
+<h1>Sample usage:</h1>
+What it's supposed to do:<br/>
+<pre id="e1" class="ccc">
+print "a ridiculously long hello world that goes over the edge and needs to be expanded"
 
-<pre class="merp">
-something that is much much longer than 300 pixels and might be code that has to go very long
-else
+quit()
+</pre>
+Some options that are available:<br/>
+<pre id="e2" class="ccc">
+
+// the default hover slide is 400px
+$("#e1").hoverSlide();
+
+// this comment isn't too long so it doesn't need to slide as much as the previous guy
+$("#e2").hoverSlide(200);
+
 </pre>
 
 </div>
-
-aand more stuff
 
 </body>
 </html>
