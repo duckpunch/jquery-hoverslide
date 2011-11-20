@@ -1,5 +1,8 @@
 (function($) {
 	$.fn.hoverSlide = function(widthOffset) {
+		if (!this) {
+			return;
+		}
 		if (isNaN(widthOffset)) {
 			widthOffset = 400;
 		}
