@@ -21,7 +21,7 @@
 
 			$t.css({
 				position : "absolute",
-				overflow : "hidden",
+				overflow : "auto",
 				width : "100%",
 				top : -$t.css("padding-top").replace("px","") - $t.css("margin-top").replace("px",""),
 				left : -$t.css("padding-left").replace("px","") - $t.css("margin-left").replace("px","")
